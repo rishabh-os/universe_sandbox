@@ -22,29 +22,12 @@ bash Miniforge3.sh
 
 I'm unsure how/if it conflicts with an existing conda installation. After installing, you will need to add the executables to your path. Just do that with
 ```bash
-conda initbut I don't know if that will work.
-```
-This should add the following lines to your `~/.bashrc` file. If it doesn't, just add them yourself.
-```bash
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/home/rishabh/miniforge3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/home/rishabh/miniforge3/etc/profile.d/conda.sh" ]; then
-        . "/home/rishabh/miniforge3/etc/profile.d/conda.sh"
-    else
-        export PATH="/home/rishabh/miniforge3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
+conda init
 ```
 
 #### f77
 
-Making all the packages successfully requires you to have a f77 binary in your path. [This](https://stackoverflow.com/questions/1175897/how-to-compile-fortran-77-files-in-linux) answer suggests using gfortran instead. However, the installation method varies per distro.
+Making all the packages successfully requires you to have a f77 binary in your path. [This](https://stackoverflow.com/questions/1175897/how-to-compile-fortran-77-files-in-linux) answer suggests using gfortran instead. It should be available in your package manager.
 
 You can make gfortran the f77 binary via an alias such as `alias f77=gfortran`. You can do this via
 ```bash
