@@ -71,7 +71,7 @@ Now, the magic command that makes all the upcoming builds work is
 ```bash
 source cosmosis-configure
 ```
-This sets up the environment variables correctly, and will be needed if you want to build any of the hundreds of the modules included in cosmosis. But it's not needed for just running and using the module.
+This sets up the environment variables correctly, and will be needed if you want to build any of the hundreds of the modules included in cosmosis. You will need to run this command every time you want to use this package.
 
 Now we jump off the rails and run some custom commands because `cosmosis-build-standard-library main` is too rigid (it's 2024 and `git` still doesn't let you not care if the directory already exists).
 
