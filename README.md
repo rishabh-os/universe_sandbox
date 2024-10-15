@@ -33,4 +33,4 @@ The main combination of `classy` + `planck` + `polychord` is right here with the
 cosmosis ../planck_custom.ini
 ```
 
-**NOTE**: Once this specific program starts running, it can't be quit using Ctrl+C. You have to kill the entire terminal to stop it. Other programs can be, I'm unsure why.
+**NOTE**: Once this program starts running, it can't be quit using Ctrl+C. You have to kill the entire terminal to stop it. This is due to using polychord as the sampler.
